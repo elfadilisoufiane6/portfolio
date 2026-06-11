@@ -1,0 +1,21 @@
+.git
+.gitignore
+.claude
+README.md
+Dockerfile
+.dockerignore
+
+# Per-package build artifacts
+**/node_modules
+**/.next
+**/out
+**/dist
+**/build
+
+# Env / logs / OS
+.env
+.env.local
+.env.*.local
+*.log
+.DS_Store
+Thumbs.db
