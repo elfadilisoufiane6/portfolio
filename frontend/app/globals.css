@@ -231,11 +231,7 @@ input, textarea, select { font-family: inherit; }
 .hero {
   position: relative; min-height: 100vh; display: flex; align-items: center;
   overflow: hidden; padding-top: var(--nav-h);
-  background: #000 url('/assets/images/Slider.png') center center / cover no-repeat;
-}
-.hero::before {
-  content: ''; position: absolute; inset: 0; z-index: 0;
-  background: rgba(0, 0, 0, 0.55);
+  background: var(--bg);
 }
 .hero-orb {
   position: absolute; border-radius: 50%; filter: blur(90px);
@@ -262,7 +258,7 @@ input, textarea, select { font-family: inherit; }
 @keyframes pulse { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: .4; transform: scale(1.6); } }
 
 .hero-title { font-size: clamp(2.4rem, 6vw, 4.4rem); font-weight: 900; line-height: 1.08; letter-spacing: -.035em; margin-bottom: 24px; }
-.hero-subtitle { font-size: clamp(1rem, 2vw, 1.2rem); color: #d0d0d0; max-width: 640px; margin: 0 auto 40px; line-height: 1.75; }
+.hero-subtitle { font-size: clamp(1rem, 2vw, 1.2rem); color: var(--text-m); max-width: 640px; margin: 0 auto 40px; line-height: 1.75; }
 .hero-actions { display: flex; align-items: center; justify-content: center; gap: 14px; flex-wrap: wrap; margin-bottom: 64px; }
 
 .hero-stats { display: flex; align-items: center; justify-content: center; gap: 48px; flex-wrap: wrap; }
@@ -272,7 +268,7 @@ input, textarea, select { font-family: inherit; }
   background: var(--grad); -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; background-clip: text;
 }
-.stat-label { font-size: .82rem; color: #c0c0c0; font-weight: 500; }
+.stat-label { font-size: .82rem; color: var(--text-m); font-weight: 500; }
 .stat-sep { width: 1px; height: 44px; background: var(--border); }
 
 /* ============================================================
@@ -738,9 +734,6 @@ button.gal-item {
 }
 
 /* light mode tweaks */
-[data-theme="light"] .hero::before { background: rgba(255,255,255,0.55); }
-[data-theme="light"] .hero-subtitle { color: #404040; }
-[data-theme="light"] .stat-label { color: #404040; }
 [data-theme="light"] .feat-tag { background: rgba(255, 255, 255, .75); color: #0a0a0a; border-color: rgba(0,0,0,.08); }
 [data-theme="light"] .pc-chrome { background: rgba(255,255,255,.7); }
 [data-theme="light"] .nav-logo { text-shadow: none; }
@@ -766,10 +759,6 @@ button.gal-item {
 @media (max-width: 768px) {
   :root { --nav-h: 64px; }
   .section-pad { padding: 70px 0; }
-  .hero {
-    background-image: url('/assets/images/slider mobile.png');
-    background-position: center top;
-  }
   .nav-links {
     position: fixed; top: var(--nav-h); left: 0; right: 0;
     background: var(--bg2); border-bottom: 1px solid var(--border);
