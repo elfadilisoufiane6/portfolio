@@ -356,65 +356,73 @@ input, textarea, select { font-family: inherit; }
    PRICING
    ============================================================ */
 .pricing { background: var(--bg); }
-.pricing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; align-items: center; }
+.pricing-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 18px; align-items: center;
+  max-width: 1040px; margin: 0 auto;
+}
 
 .price-card {
-  padding: 36px 32px; border-radius: var(--r-xl);
+  padding: 26px 24px; border-radius: var(--r-lg);
   background: var(--glass); border: 1px solid var(--border);
   transition: var(--t); position: relative; overflow: hidden;
 }
 .price-card::after {
-  content: ''; position: absolute; inset: 0; border-radius: var(--r-xl); padding: 1.5px;
+  content: ''; position: absolute; inset: 0; border-radius: var(--r-lg); padding: 1.2px;
   background: var(--grad);
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor; mask-composite: exclude;
   opacity: 0; transition: opacity .35s var(--ease); pointer-events: none;
 }
-.price-card:hover { transform: translateY(-10px); box-shadow: var(--shadow), var(--glow); }
+.price-card:hover { transform: translateY(-8px); box-shadow: var(--shadow), var(--glow); }
 .price-card:hover::after { opacity: 1; }
 
 .price-card.popular {
-  padding: 44px 36px;
+  padding: 30px 26px;
   background: rgba(125, 255, 129, 0.06);
   border-color: rgba(125, 255, 129, 0.35);
-  box-shadow: 0 0 40px rgba(125, 255, 129, 0.18), var(--shadow);
-  transform: scale(1.04);
+  box-shadow: 0 0 32px rgba(125, 255, 129, 0.16), var(--shadow);
+  transform: scale(1.03);
 }
 .price-card.popular::after { opacity: 1; }
-.price-card.popular:hover { transform: scale(1.04) translateY(-10px); }
+.price-card.popular:hover { transform: scale(1.03) translateY(-8px); }
 
 .popular-badge {
-  display: inline-flex; align-items: center; gap: 6px;
-  padding: 6px 16px; border-radius: 100px;
+  display: inline-flex; align-items: center; gap: 5px;
+  padding: 4px 12px; border-radius: 100px;
   background: var(--grad); color: #000;
-  font-size: .75rem; font-weight: 800; letter-spacing: .06em;
-  margin-bottom: 22px;
+  font-size: .68rem; font-weight: 800; letter-spacing: .06em;
+  margin-bottom: 16px;
   animation: badgePulse 2.5s ease-in-out infinite;
 }
 @keyframes badgePulse {
   0%, 100% { box-shadow: 0 0 0 0 rgba(125, 255, 129, 0.45); }
-  50%      { box-shadow: 0 0 0 8px rgba(125, 255, 129, 0); }
+  50%      { box-shadow: 0 0 0 7px rgba(125, 255, 129, 0); }
 }
 
-.price-name { font-size: 1.15rem; font-weight: 800; margin-bottom: 10px; }
-.price-desc { font-size: .875rem; color: var(--text-m); margin-bottom: 24px; line-height: 1.6; }
+.price-name { font-size: 1rem; font-weight: 800; margin-bottom: 6px; letter-spacing: -.01em; }
+.price-desc { font-size: .8rem; color: var(--text-m); margin-bottom: 14px; line-height: 1.55; min-height: 38px; }
 .price-amount {
-  font-size: 3.2rem; font-weight: 900; line-height: 1; margin-bottom: 6px;
-  color: var(--price-amount-color);
+  font-size: 2.2rem; font-weight: 900; line-height: 1; margin-bottom: 3px;
+  color: var(--price-amount-color); letter-spacing: -.02em;
 }
-.price-period { font-size: .82rem; color: var(--text-s); margin-bottom: 28px; }
+.price-period { font-size: .72rem; color: var(--text-s); margin-bottom: 18px; }
 .price-features {
-  display: flex; flex-direction: column; gap: 11px;
-  margin-bottom: 32px; padding: 24px 0;
+  display: flex; flex-direction: column; gap: 7px;
+  margin-bottom: 20px; padding: 16px 0;
   border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
 }
-.pf-item { display: flex; align-items: center; gap: 10px; font-size: .86rem; color: var(--text-m); }
+.pf-item { display: flex; align-items: center; gap: 8px; font-size: .78rem; color: var(--text-m); line-height: 1.4; }
 .pf-check {
-  width: 20px; height: 20px; border-radius: 50%;
-  background: rgba(125, 255, 129, 0.15); border: 1.5px solid rgba(125, 255, 129, 0.3);
+  width: 16px; height: 16px; border-radius: 50%;
+  background: rgba(125, 255, 129, 0.15); border: 1.2px solid rgba(125, 255, 129, 0.3);
   display: flex; align-items: center; justify-content: center;
   flex-shrink: 0; color: var(--primary);
 }
+[data-theme="light"] .pf-check {
+  background: rgba(22, 163, 74, 0.10); border-color: rgba(22, 163, 74, 0.35);
+}
+.price-card .btn-primary { padding: 11px 20px; font-size: .82rem; }
 
 /* ============================================================
    REVIEWS
@@ -830,9 +838,9 @@ button.gal-item {
    RESPONSIVE
    ============================================================ */
 @media (max-width: 1024px) {
-  .pricing-grid { gap: 20px; }
-  .price-card.popular { transform: scale(1.02); padding: 40px 32px; }
-  .price-card.popular:hover { transform: scale(1.02) translateY(-10px); }
+  .pricing-grid { gap: 16px; }
+  .price-card.popular { transform: scale(1.015); padding: 28px 24px; }
+  .price-card.popular:hover { transform: scale(1.015) translateY(-8px); }
   .reviews-grid { grid-template-columns: repeat(2, 1fr); }
   .feat-grid { grid-template-columns: repeat(2, 1fr); }
   .project-grid, .project-block:nth-child(even) .project-grid { grid-template-columns: 1fr; gap: 30px; }
