@@ -4,7 +4,10 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import WhatsAppFloat from '@/components/WhatsAppFloat';
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://soufweb.ma';
+
 export const metadata = {
+  metadataBase: new URL(siteUrl),
   title: {
     default: 'Souf Web | Agence Web Premium Maroc',
     template: '%s | Souf Web',

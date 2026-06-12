@@ -1,10 +1,11 @@
 export const SITE = {
   name: 'Souf Web',
-  phone: '212724016604',
-  email: 'contact@soufweb.ma',
-  instagram: 'https://www.instagram.com/soufweb_/',
-  linkedin: 'https://www.linkedin.com/in/me/',
-  waMsg: 'Bonjour%2C%20je%20voudrais%20discuter%20d%27un%20projet%20web',
+  url:       process.env.NEXT_PUBLIC_SITE_URL  || 'https://soufweb.ma',
+  phone:     process.env.NEXT_PUBLIC_PHONE     || '212724016604',
+  email:     process.env.NEXT_PUBLIC_EMAIL     || 'contact@soufweb.ma',
+  instagram: process.env.NEXT_PUBLIC_INSTAGRAM || 'https://www.instagram.com/soufweb_/',
+  linkedin:  process.env.NEXT_PUBLIC_LINKEDIN  || 'https://www.linkedin.com/in/me/',
+  waMsg:     process.env.NEXT_PUBLIC_WA_MSG    || 'Bonjour%2C%20je%20voudrais%20discuter%20d%27un%20projet%20web',
 };
 
 export const waLink = (msg) =>
