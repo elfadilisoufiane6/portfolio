@@ -2,6 +2,7 @@
 
 import { REVIEWS, waLink } from '@/lib/data';
 import { useApp } from './Providers';
+import Reveal from './Reveal';
 
 export default function Reviews() {
   const { lang, t } = useApp();
@@ -10,17 +11,17 @@ export default function Reviews() {
   return (
     <section className="reviews section-pad" id="reviews">
       <div className="container">
-        <div className="section-head">
+        <Reveal variant="up" as="div" className="section-head">
           <span className="section-tag">{t('reviews.tag')}</span>
           <h2>
             {t('reviews.title1')}<span className="gradient-text">{t('reviews.title2')}</span>
           </h2>
           <p>{t('reviews.subtitle')}</p>
-        </div>
+        </Reveal>
 
         <div className="reviews-grid">
           {list.map((r, i) => (
-            <div className="review-card" key={i}>
+            <Reveal variant="up" delay={i * 120} as="div" className="review-card" key={i}>
               <div className="review-stars">{'⭐'.repeat(r.stars)}</div>
               <p className="review-quote">"{r.quote}"</p>
               <div className="review-author">
@@ -30,11 +31,11 @@ export default function Reviews() {
                   <div className="review-role">{r.role}</div>
                 </div>
               </div>
-            </div>
+            </Reveal>
           ))}
         </div>
 
-        <div className="cta-block" style={{ marginTop: 80 }}>
+        <Reveal variant="zoom" as="div" className="cta-block" style={{ marginTop: 80 }}>
           <h2>
             {t('cta.title1')}<span className="gradient-text">{t('cta.title2')}</span>
           </h2>
@@ -47,7 +48,7 @@ export default function Reviews() {
               {t('cta.btn')}
             </a>
           </div>
-        </div>
+        </Reveal>
       </div>
     </section>
   );

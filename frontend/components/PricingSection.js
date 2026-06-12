@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { PRICING, waLink } from '@/lib/data';
 import { useApp } from './Providers';
+import Reveal from './Reveal';
 
 export default function PricingSection({ withCompareLink = false }) {
   const { lang, t } = useApp();
@@ -11,17 +12,17 @@ export default function PricingSection({ withCompareLink = false }) {
   return (
     <section className="pricing section-pad" id="pricing">
       <div className="container">
-        <div className="section-head">
+        <Reveal variant="up" as="div" className="section-head">
           <span className="section-tag">{t('pricing.tag')}</span>
           <h2>
             {t('pricing.title1')}<span className="gradient-text">{t('pricing.title2')}</span>
           </h2>
           <p>{t('pricing.subtitle')}</p>
-        </div>
+        </Reveal>
 
         <div className="pricing-grid">
           {list.map((p, i) => (
-            <div className={`price-card ${p.popular ? 'popular' : ''}`} key={i}>
+            <Reveal variant="up" delay={i * 110} as="div" className={`price-card ${p.popular ? 'popular' : ''}`} key={i}>
               {p.popular && <div className="popular-badge">{t('pricing.popular')}</div>}
               <div className="price-name">{p.name}</div>
               <div className="price-desc">{p.desc}</div>
@@ -49,7 +50,7 @@ export default function PricingSection({ withCompareLink = false }) {
               >
                 {p.cta}
               </a>
-            </div>
+            </Reveal>
           ))}
         </div>
 

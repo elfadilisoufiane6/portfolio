@@ -94,7 +94,7 @@ export const PRICING = {
 export const REVIEWS = {
   fr: [
     { avatar:'👩‍💼', name:'Sara M.',  role:'Fondatrice, Rebelle.ma',         stars:5,
-      quote:"Souf Web bnaw lia un e-shop ديال les sacs à main féminins qui vend tout seul. Système COD réglé parfaitement, les commandes kayjiw من partout au Maroc. Le ROI was immédiat — en moins de 2 mois." },
+      quote:"Souf Web nous a livré un e-shop premium pour notre marque de sacs à main féminins, et il vend tout seul. Le système COD fonctionne parfaitement, les commandes arrivent de partout au Maroc. Le retour sur investissement a été immédiat — en moins de 2 mois." },
     { avatar:'👨‍💼', name:'Hamza R.', role:'Directeur, Azure Palace Hotel',  stars:5,
       quote:"Cherche un développeur li yfhem business, machi ghir code. Souf Web fahmou le besoin men l'awal, livraison f 3 semaines, w l9itu vraiment professionnels. Les réservations directes monta3aw +220%." },
     { avatar:'⛵',   name:'Reda T.',  role:'Fondateur, Jet Set Loisirs',     stars:5,
@@ -102,7 +102,7 @@ export const REVIEWS = {
   ],
   en: [
     { avatar:'👩‍💼', name:'Sara M.',  role:'Founder, Rebelle.ma',            stars:5,
-      quote:"Souf Web built lia an e-shop ديال women's handbags that sells on its own. COD system setup parfait, orders kayjiw from across Morocco. ROI was instant, less than 2 months." },
+      quote:"Souf Web delivered a premium e-shop for our women's handbags brand, and it sells on its own. The COD system works flawlessly, orders arrive from all across Morocco. The return on investment was immediate — in less than 2 months." },
     { avatar:'👨‍💼', name:'Hamza R.', role:'GM, Azure Palace Hotel',         stars:5,
       quote:"Looking for a dev li yfhem business, not just code. Souf Web fahmou the need from day 1, shipped in 3 weeks, w l9itou really professional. Direct bookings +220%." },
     { avatar:'⛵',   name:'Reda T.',  role:'Founder, Jet Set Loisirs',       stars:5,
@@ -110,7 +110,7 @@ export const REVIEWS = {
   ],
   ar: [
     { avatar:'👩‍💼', name:'سارة م.',  role:'مؤسسة، Rebelle.ma',                stars:5,
-      quote:'Souf Web بناو ليا متجر ديال الحقائب النسائية كيبيع بوحدو. نظام COD متضبط، الطلبات كيجيو من كل المغرب. ROI كان فوري — أقل من شهرين.' },
+      quote:'سلّمت لنا Souf Web متجراً إلكترونياً فاخراً لعلامتنا للحقائب النسائية، وهو يبيع بمفرده. نظام الدفع عند الاستلام يعمل بشكل ممتاز، والطلبات تأتينا من كل أنحاء المغرب. عائد الاستثمار كان فورياً — في أقل من شهرين.' },
     { avatar:'👨‍💼', name:'حمزة ر.',  role:'المدير العام، Azure Palace Hotel', stars:5,
       quote:'كنت كنقلب على مطور كيفهم business، ماشي غير كود. Souf Web فهمو الحاجة من أول يوم، سلمو فـ 3 أسابيع، ولقيتهم محترفين بصح. الحجوزات المباشرة طلعت +220%.' },
     { avatar:'⛵',   name:'رضا ت.',   role:'مؤسس، Jet Set Loisirs',           stars:5,

@@ -7,7 +7,7 @@ const Ctx = createContext(null);
 
 export function Providers({ children }) {
   const [lang, setLangState] = useState(DEFAULT_LANG);
-  const [theme, setThemeState] = useState('dark');
+  const [theme, setThemeState] = useState('light');
   const [ready, setReady] = useState(false);
 
   // hydrate from localStorage on mount

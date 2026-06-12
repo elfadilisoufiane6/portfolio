@@ -17,7 +17,7 @@ const initScript = `
     var t = localStorage.getItem('soufweb_theme');
     var l = localStorage.getItem('soufweb_lang');
     if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
-    else document.documentElement.setAttribute('data-theme', 'dark');
+    else document.documentElement.setAttribute('data-theme', 'light');
     if (l === 'fr' || l === 'en' || l === 'ar') {
       document.documentElement.lang = l;
       document.documentElement.dir = l === 'ar' ? 'rtl' : 'ltr';
@@ -30,7 +30,7 @@ const initScript = `
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="fr" dir="ltr" data-theme="dark" suppressHydrationWarning>
+    <html lang="fr" dir="ltr" data-theme="light" suppressHydrationWarning>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />

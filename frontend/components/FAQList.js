@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { FAQ } from '@/lib/data';
 import { useApp } from './Providers';
+import Reveal from './Reveal';
 
 export default function FAQList() {
   const { lang } = useApp();
@@ -12,7 +13,7 @@ export default function FAQList() {
   return (
     <div className="faq-list">
       {list.map((item, i) => (
-        <div className={`faq-item ${openIdx === i ? 'open' : ''}`} key={i}>
+        <Reveal variant="up" delay={i * 60} as="div" className={`faq-item ${openIdx === i ? 'open' : ''}`} key={i}>
           <button
             className="faq-q"
             onClick={() => setOpenIdx(openIdx === i ? null : i)}
@@ -29,7 +30,7 @@ export default function FAQList() {
           <div className="faq-a">
             <div className="faq-a-inner">{item.a}</div>
           </div>
-        </div>
+        </Reveal>
       ))}
     </div>
   );

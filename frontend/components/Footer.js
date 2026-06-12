@@ -12,7 +12,7 @@ export default function Footer() {
         <div className="footer-top">
           <div className="footer-brand">
             <div className="footer-logo">
-              Souf<span>Web</span>
+              <img src="/logo.png" alt="Souf Web" className="footer-logo-img" />
             </div>
             <p>{t('footer.tagline')}</p>
             <div className="footer-socials">

@@ -31,8 +31,8 @@ export default function Navbar() {
       style={{ boxShadow: scrolled ? '0 4px 30px rgba(0,0,0,0.3)' : 'none' }}
     >
       <div className="nav-inner">
-        <Link href="/" className="nav-logo" onClick={() => setOpen(false)}>
-          Souf<span>Web</span>
+        <Link href="/" className="nav-logo" onClick={() => setOpen(false)} aria-label="Souf Web — accueil">
+          <img src="/logo.png" alt="Souf Web" className="nav-logo-img" />
         </Link>
 
         <ul className={`nav-links ${open ? 'open' : ''}`}>

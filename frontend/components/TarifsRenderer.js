@@ -4,6 +4,7 @@ import PricingSection from '@/components/PricingSection';
 import FAQList from '@/components/FAQList';
 import { waLink } from '@/lib/data';
 import { useApp } from './Providers';
+import Reveal from './Reveal';
 
 function Cell({ value }) {
   if (value === true) return <span className="yes">✓</span>;
@@ -37,11 +38,13 @@ export default function TarifsRenderer() {
     <>
       <section className="page-hero">
         <div className="container">
-          <span className="section-tag">{t('nav.tarifs')}</span>
-          <h1>
-            {t('tarifs.title1')}<span className="gradient-text">{t('tarifs.title2')}</span>
-          </h1>
-          <p>{t('tarifs.subtitle')}</p>
+          <Reveal variant="up" as="div">
+            <span className="section-tag">{t('nav.tarifs')}</span>
+            <h1>
+              {t('tarifs.title1')}<span className="gradient-text">{t('tarifs.title2')}</span>
+            </h1>
+            <p>{t('tarifs.subtitle')}</p>
+          </Reveal>
         </div>
       </section>
 
@@ -49,15 +52,15 @@ export default function TarifsRenderer() {
 
       <section className="section-pad" style={{ background: 'var(--bg2)' }}>
         <div className="container">
-          <div className="section-head">
+          <Reveal variant="up" as="div" className="section-head">
             <span className="section-tag">{t('tarifs.compareTag')}</span>
             <h2>
               {t('tarifs.compareTitle1')}<span className="gradient-text">{t('tarifs.compareTitle2')}</span>
             </h2>
             <p>{t('tarifs.compareSubtitle')}</p>
-          </div>
+          </Reveal>
 
-          <div className="compare-table">
+          <Reveal variant="up" delay={120} as="div" className="compare-table">
             <table>
               <thead>
                 <tr>
@@ -78,26 +81,26 @@ export default function TarifsRenderer() {
                 ))}
               </tbody>
             </table>
-          </div>
+          </Reveal>
         </div>
       </section>
 
       <section className="section-pad">
         <div className="container">
-          <div className="section-head">
+          <Reveal variant="up" as="div" className="section-head">
             <span className="section-tag">{t('tarifs.faqTag')}</span>
             <h2>
               {t('tarifs.faqTitle1')}<span className="gradient-text">{t('tarifs.faqTitle2')}</span>
             </h2>
             <p>{t('tarifs.faqSubtitle')}</p>
-          </div>
+          </Reveal>
           <FAQList />
         </div>
       </section>
 
       <section className="section-pad" style={{ paddingTop: 0 }}>
         <div className="container">
-          <div className="cta-block">
+          <Reveal variant="zoom" as="div" className="cta-block">
             <h2>
               {t('tarifs.ctaTitle1')}<span className="gradient-text">{t('tarifs.ctaTitle2')}</span>
             </h2>
@@ -107,7 +110,7 @@ export default function TarifsRenderer() {
                 {t('tarifs.ctaBtn')}
               </a>
             </div>
-          </div>
+          </Reveal>
         </div>
       </section>
     </>

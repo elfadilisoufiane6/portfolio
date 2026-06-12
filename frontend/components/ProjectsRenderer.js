@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { PROJECTS, waLink } from '@/lib/data';
 import { useApp } from './Providers';
 import Lightbox from './Lightbox';
+import Reveal from './Reveal';
 
 export default function ProjectsRenderer({ imagesBySlug }) {
   const { lang, t } = useApp();
@@ -18,21 +19,24 @@ export default function ProjectsRenderer({ imagesBySlug }) {
     <>
       <section className="page-hero">
         <div className="container">
-          <span className="section-tag">{t('projects.tag')}</span>
-          <h1>
-            {t('projects.title1')}<span className="gradient-text">{t('projects.title2')}</span>
-          </h1>
-          <p>{t('projects.subtitle')}</p>
+          <Reveal variant="up" as="div">
+            <span className="section-tag">{t('projects.tag')}</span>
+            <h1>
+              {t('projects.title1')}<span className="gradient-text">{t('projects.title2')}</span>
+            </h1>
+            <p>{t('projects.subtitle')}</p>
+          </Reveal>
         </div>
       </section>
 
-      {list.map((p) => {
+      {list.map((p, blockIdx) => {
         const images = imagesBySlug[p.slug] || [];
+        const isEven = blockIdx % 2 === 1;
         return (
           <article className="project-block" key={p.slug}>
             <div className="container">
               <div className="project-grid">
-                <div className="project-info">
+                <Reveal variant={isEven ? 'right' : 'left'} as="div" className="project-info">
                   <span className="project-tag">{p.icon} {p.category}</span>
                   <h2>{p.title}</h2>
                   <p className="project-summary">{p.summary}</p>
@@ -71,9 +75,9 @@ export default function ProjectsRenderer({ imagesBySlug }) {
                     </svg>
                     {t('projects.discuss')}
                   </a>
-                </div>
+                </Reveal>
 
-                <div className="project-gallery">
+                <Reveal variant={isEven ? 'left' : 'right'} as="div" className="project-gallery">
                   {images.length === 0 ? (
                     <div className="gal-item">
                       <div className="gal-empty">
@@ -95,13 +99,15 @@ export default function ProjectsRenderer({ imagesBySlug }) {
                           alt={`${p.title} — image ${i + 1}`}
                           width={i === 0 ? 800 : 400}
                           height={i === 0 ? 450 : 300}
+                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 540px"
+                          quality={72}
+                          loading={i === 0 && blockIdx === 0 ? 'eager' : 'lazy'}
                           style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-                          priority={i === 0}
                         />
                       </button>
                     ))
                   )}
-                </div>
+                </Reveal>
               </div>
             </div>
           </article>
@@ -110,7 +116,7 @@ export default function ProjectsRenderer({ imagesBySlug }) {
 
       <section className="section-pad">
         <div className="container">
-          <div className="cta-block">
+          <Reveal variant="zoom" as="div" className="cta-block">
             <h2>
               {t('cta.title1')}<span className="gradient-text">{t('cta.title2')}</span>
             </h2>
@@ -120,7 +126,7 @@ export default function ProjectsRenderer({ imagesBySlug }) {
                 {t('cta.btn')}
               </a>
             </div>
-          </div>
+          </Reveal>
         </div>
       </section>
 
