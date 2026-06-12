@@ -46,6 +46,14 @@ export default function FeaturedProjects({ covers = {} }) {
                       <div className="feat-cover-fallback">{p.icon}</div>
                     )}
                     <span className="feat-tag">{p.category}</span>
+                    <div className="feat-cover-overlay">
+                      <span className="feat-cover-cta">
+                        {t('projects.viewAll')}
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                          <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                      </span>
+                    </div>
                   </div>
                   <div className="feat-body">
                     <div className="feat-title">

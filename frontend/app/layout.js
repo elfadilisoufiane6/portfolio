@@ -5,10 +5,39 @@ import Footer from '@/components/Footer';
 import WhatsAppFloat from '@/components/WhatsAppFloat';
 
 export const metadata = {
-  title: 'Souf Web | Agence Web Premium Maroc',
+  title: {
+    default: 'Souf Web | Agence Web Premium Maroc',
+    template: '%s | Souf Web',
+  },
   description:
     "Nous ne créons pas que des sites — nous créons des clients pour votre business. Sites web haute conversion, e-commerce, design premium au Maroc.",
-  keywords: 'web design Maroc, agence web, e-commerce, landing page, SEO, Souf Web',
+  keywords: ['web design Maroc', 'agence web', 'e-commerce', 'landing page', 'SEO', 'Souf Web'],
+  authors: [{ name: 'Souf Web' }],
+  creator: 'Souf Web',
+  openGraph: {
+    type: 'website',
+    locale: 'fr_MA',
+    title: 'Souf Web — Sites web haute conversion au Maroc',
+    description:
+      "Sites web premium qui transforment vos visiteurs en clients. Hôtellerie, e-commerce, tourisme — design moderne, livraison rapide.",
+    siteName: 'Souf Web',
+    images: [
+      {
+        url: '/logo.png',
+        width: 1254,
+        height: 1254,
+        alt: 'Souf Web',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary',
+    title: 'Souf Web — Sites web haute conversion au Maroc',
+    description:
+      "Sites web premium qui transforment vos visiteurs en clients.",
+    images: ['/logo.png'],
+  },
+  robots: { index: true, follow: true },
 };
 
 // avoid theme/lang flash on first paint
