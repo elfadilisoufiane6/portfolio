@@ -1,23 +1,34 @@
 'use client';
 
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
+import { useEffect, useLayoutEffect, useState } from 'react';
 import { waLink } from '@/lib/data';
 import { useApp } from './Providers';
 import Reveal from './Reveal';
 
+// run before paint on the client, fall back to useEffect on the server
+const useIsoLayoutEffect = typeof window !== 'undefined' ? useLayoutEffect : useEffect;
+
 function Counter({ target, suffix = '', duration = 1600 }) {
-  const [value, setValue] = useState(0);
-  useEffect(() => {
-    const step = 16;
-    const inc = target / (duration / step);
-    let cur = 0;
-    const timer = setInterval(() => {
-      cur += inc;
-      if (cur >= target) { cur = target; clearInterval(timer); }
-      setValue(Math.round(cur));
-    }, step);
-    return () => clearInterval(timer);
+  // start at the real value so SSR / no-JS / pre-hydration never shows "0"
+  const [value, setValue] = useState(target);
+  useIsoLayoutEffect(() => {
+    // honour reduced-motion: keep the final number, skip the count-up
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      setValue(target);
+      return;
+    }
+    let raf;
+    const start = performance.now();
+    setValue(0); // applied before paint, so users never see the target → 0 jump
+    const tick = (now) => {
+      const p = Math.min((now - start) / duration, 1);
+      const eased = 1 - Math.pow(1 - p, 3); // easeOutCubic
+      setValue(Math.round(target * eased));
+      if (p < 1) raf = requestAnimationFrame(tick);
+    };
+    raf = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(raf);
   }, [target, duration]);
   return <>{value}{suffix}</>;
 }

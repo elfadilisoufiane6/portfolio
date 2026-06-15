@@ -30,7 +30,7 @@ export default function TarifsRenderer() {
     { feature: t('compare.analytics'),   starter: false,                 pro: false,                  premium: true },
     { feature: t('compare.host'),        starter: false,                 pro: false,                  premium: true },
     { feature: t('compare.rev'),         starter: '1',                   pro: '3',                    premium: t('compare.unlimited') },
-    { feature: t('compare.support'),     starter: '—',                   pro: t('compare.30d'),       premium: t('compare.60d') },
+    { feature: t('compare.support'),     starter: t('compare.support7'), pro: t('compare.30d'),       premium: t('compare.60d') },
     { feature: t('compare.delay'),       starter: t('compare.5to7'),     pro: t('compare.10to14'),    premium: t('compare.scope') },
   ];
 
@@ -49,6 +49,18 @@ export default function TarifsRenderer() {
       </section>
 
       <PricingSection />
+
+      <div className="container">
+        <Reveal variant="fade" as="div" className="custom-quote">
+          <span>{t('tarifs.custom')}</span>
+          <a href={waLink('Bonjour%2C%20j%27aimerais%20un%20devis%20personnalis%C3%A9%20pour%20un%20projet%20sur-mesure')} className="custom-quote-link" target="_blank" rel="noopener noreferrer">
+            {t('tarifs.customLink')}
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+        </Reveal>
+      </div>
 
       <section className="section-pad" style={{ background: 'var(--bg2)' }}>
         <div className="container">

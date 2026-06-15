@@ -1,7 +1,7 @@
 import TarifsRenderer from '@/components/TarifsRenderer';
 
 export const metadata = {
-  title: 'Tarifs | Souf Web',
+  title: 'Tarifs & Prix | Agence Web Maroc',
   description:
     'Tarifs transparents et sans surprises : Starter 1 500 DH, Pro 2 500 DH, Premium 4 900 DH. Paiement unique, aucun abonnement.',
 };

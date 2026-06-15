@@ -1,10 +1,10 @@
 export const SITE = {
   name: 'Souf Web',
-  url:       process.env.NEXT_PUBLIC_SITE_URL  || 'https://soufweb.ma',
+  url:       process.env.NEXT_PUBLIC_SITE_URL  || 'https://soufweb.site',
   phone:     process.env.NEXT_PUBLIC_PHONE     || '212724016604',
-  email:     process.env.NEXT_PUBLIC_EMAIL     || 'contact@soufweb.ma',
+  email:     process.env.NEXT_PUBLIC_EMAIL     || 'contact@soufweb.site',
   instagram: process.env.NEXT_PUBLIC_INSTAGRAM || 'https://www.instagram.com/soufweb_/',
-  linkedin:  process.env.NEXT_PUBLIC_LINKEDIN  || 'https://www.linkedin.com/in/me/',
+  linkedin:  process.env.NEXT_PUBLIC_LINKEDIN  || 'https://www.linkedin.com/in/souf-web-47079740a/',
   waMsg:     process.env.NEXT_PUBLIC_WA_MSG    || 'Bonjour%2C%20je%20voudrais%20discuter%20d%27un%20projet%20web',
 };
 
@@ -48,7 +48,7 @@ export const PRICING = {
   fr: [
     { name:'Starter', price:'1 500 DH', period:'paiement unique', popular:false,
       desc:"Parfait pour lancer rapidement une présence professionnelle en ligne.",
-      features:['Site web 1 à 3 pages','Design 100% responsive','Formulaire de contact','SEO de base configuré','Vitesse optimisée','Intégration WhatsApp','1 cycle de révisions','Livraison en 5 jours'],
+      features:['Site web 1 à 3 pages','Design 100% responsive','Formulaire de contact','SEO de base configuré','Vitesse optimisée','Intégration WhatsApp','1 cycle de révisions','Support email 7 jours','Livraison en 5 jours'],
       cta:'Démarrer mon site' },
     { name:'Pro', price:'2 500 DH', period:'paiement unique', popular:true,
       desc:"Idéal pour les entreprises sérieuses qui veulent plus de clients et un branding solide.",
@@ -62,7 +62,7 @@ export const PRICING = {
   en: [
     { name:'Starter', price:'1,500 DH', period:'one-time payment', popular:false,
       desc:'Perfect for quickly launching a professional online presence.',
-      features:['1 to 3 pages website','100% responsive design','Contact form','Basic SEO setup','Speed optimized','WhatsApp integration','1 revision cycle','Delivery in 5 days'],
+      features:['1 to 3 pages website','100% responsive design','Contact form','Basic SEO setup','Speed optimized','WhatsApp integration','1 revision cycle','Email support 7 days','Delivery in 5 days'],
       cta:'Get Started' },
     { name:'Pro', price:'2,500 DH', period:'one-time payment', popular:true,
       desc:'Ideal for serious businesses that want more clients and strong branding.',
@@ -76,7 +76,7 @@ export const PRICING = {
   ar: [
     { name:'ستارتر', price:'1 500 درهم', period:'دفعة واحدة', popular:false,
       desc:'مثالي لإطلاق حضور احترافي على الإنترنت بسرعة.',
-      features:['موقع من 1 إلى 3 صفحات','تصميم متجاوب 100%','نموذج اتصال','إعداد SEO أساسي','سرعة محسّنة','تكامل واتساب','دورة مراجعة واحدة','تسليم في 5 أيام'],
+      features:['موقع من 1 إلى 3 صفحات','تصميم متجاوب 100%','نموذج اتصال','إعداد SEO أساسي','سرعة محسّنة','تكامل واتساب','دورة مراجعة واحدة','دعم بريد إلكتروني 7 أيام','تسليم في 5 أيام'],
       cta:'ابدأ موقعي' },
     { name:'برو', price:'2 500 درهم', period:'دفعة واحدة', popular:true,
       desc:'مثالي للشركات الجادة التي تريد عملاء أكثر وهوية قوية.',
@@ -285,7 +285,7 @@ export const FAQ = {
     { q:"Comment se passe le paiement ?",                       a:"50% au démarrage du projet, 50% à la livraison finale. Simple, sécurisé, sans surprises." },
     { q:"Est-ce que mon site sera visible sur Google ?",        a:"Oui. Chaque site est livré avec SEO de base. Pro et Premium incluent un SEO avancé." },
     { q:"Mon site sera-t-il adapté aux mobiles ?",              a:"100% responsive. Plus de 70% du trafic vient du mobile — chaque site est parfaitement adapté." },
-    { q:"Je ne suis pas satisfait, que se passe-t-il ?",        a:"Nous travaillons jusqu'à votre satisfaction totale. Des révisions sont incluses dans chaque pack." },
+    { q:"Je ne suis pas satisfait, que se passe-t-il ?",        a:"Chaque pack inclut des révisions (1 pour Starter, 3 pour Pro, illimitées pour Premium). Si le résultat ne vous convient toujours pas, nous ajoutons des révisions supplémentaires offertes — sans frais cachés, jusqu'à votre satisfaction." },
     { q:"Comment démarrer mon projet maintenant ?",             a:"Un seul message WhatsApp suffit. Envoyez votre idée et nous répondons dans l'heure." },
   ],
   en: [
@@ -293,7 +293,7 @@ export const FAQ = {
     { q:"How does payment work?",                                a:"50% upfront, 50% on final delivery. Simple, secure, no surprises." },
     { q:"Will my site rank on Google?",                          a:"Yes. Every site comes with basic SEO. Pro and Premium include advanced SEO." },
     { q:"Will my site work on mobile?",                          a:"100% responsive. Over 70% of traffic is mobile — every site is fully adapted." },
-    { q:"What if I'm not satisfied?",                            a:"We work until you're 100% satisfied. Revisions are included in every plan." },
+    { q:"What if I'm not satisfied?",                            a:"Every plan includes revisions (1 for Starter, 3 for Pro, unlimited for Premium). If it's still not right, we add extra revisions for free — no hidden fees, until you're fully satisfied." },
     { q:"How do I start my project right now?",                  a:"One WhatsApp message is enough. Send your idea and we reply within the hour." },
   ],
   ar: [
@@ -301,7 +301,7 @@ export const FAQ = {
     { q:"كيف يتم الدفع؟",                                            a:"50% عند البداية و50% عند التسليم النهائي. بسيط وآمن بدون مفاجآت." },
     { q:"هل سيظهر موقعي على جوجل؟",                                  a:"نعم. كل موقع يأتي مع SEO أساسي. Pro و Premium يشملان SEO متقدم." },
     { q:"هل سيعمل موقعي على الموبايل؟",                              a:"متجاوب 100%. أكثر من 70% من الزيارات من الموبايل — كل موقع مهيأ بالكامل." },
-    { q:"ماذا لو لم أكن راضياً؟",                                     a:"نعمل حتى ترضى 100%. المراجعات مشمولة في كل باقة." },
+    { q:"ماذا لو لم أكن راضياً؟",                                     a:"كل باقة تتضمن مراجعات (1 لـ Starter، 3 لـ Pro، غير محدودة لـ Premium). وإن لم تكن النتيجة كما تريد، نضيف مراجعات إضافية مجاناً — بدون رسوم خفية، حتى رضاك التام." },
     { q:"كيف أبدأ مشروعي الآن؟",                                     a:"رسالة واحدة على واتساب تكفي. أرسل فكرتك ونرد عليك خلال ساعة." },
   ],
 };

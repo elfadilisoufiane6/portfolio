@@ -70,6 +70,8 @@ export const STRINGS = {
     'tarifs.ctaTitle2': 'démarrer ?',
     'tarifs.ctaSubtitle': "Un seul message WhatsApp et nous vous répondons dans l'heure avec un plan d'action clair.",
     'tarifs.ctaBtn': 'Discuter sur WhatsApp',
+    'tarifs.custom': 'Besoin d’un projet plus grand ou 100% sur-mesure ?',
+    'tarifs.customLink': 'Demander un devis personnalisé',
 
     'footer.nav': 'Navigation',
     'footer.contact': 'Contact',
@@ -101,6 +103,7 @@ export const STRINGS = {
     'compare.scope': 'selon scope',
     'compare.30d': '30 jours',
     'compare.60d': '60 jours prio',
+    'compare.support7': '7 jours (email)',
   },
   en: {
     'nav.home': 'Home',
@@ -170,6 +173,8 @@ export const STRINGS = {
     'tarifs.ctaTitle2': 'start?',
     'tarifs.ctaSubtitle': 'One WhatsApp message and we reply within the hour with a clear action plan.',
     'tarifs.ctaBtn': 'Chat on WhatsApp',
+    'tarifs.custom': 'Need a bigger or fully custom project?',
+    'tarifs.customLink': 'Request a custom quote',
 
     'footer.nav': 'Navigation',
     'footer.contact': 'Contact',
@@ -201,6 +206,7 @@ export const STRINGS = {
     'compare.scope': 'per scope',
     'compare.30d': '30 days',
     'compare.60d': '60 days prio',
+    'compare.support7': '7 days (email)',
   },
   ar: {
     'nav.home': 'الرئيسية',
@@ -270,6 +276,8 @@ export const STRINGS = {
     'tarifs.ctaTitle2': 'للبدء؟',
     'tarifs.ctaSubtitle': 'رسالة واتساب واحدة ونرد عليك خلال ساعة بخطة عمل واضحة.',
     'tarifs.ctaBtn': 'تواصل عبر واتساب',
+    'tarifs.custom': 'تحتاج مشروعاً أكبر أو مخصصاً 100%؟',
+    'tarifs.customLink': 'اطلب عرض سعر مخصص',
 
     'footer.nav': 'التنقل',
     'footer.contact': 'التواصل',
@@ -301,6 +309,7 @@ export const STRINGS = {
     'compare.scope': 'حسب النطاق',
     'compare.30d': '30 يوم',
     'compare.60d': '60 يوم أولوية',
+    'compare.support7': '7 أيام (إيميل)',
   },
 };
 

@@ -4,7 +4,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import WhatsAppFloat from '@/components/WhatsAppFloat';
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://soufweb.ma';
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://soufweb.site';
 
 export const metadata = {
   metadataBase: new URL(siteUrl),
