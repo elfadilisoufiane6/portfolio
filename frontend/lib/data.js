@@ -173,6 +173,22 @@ export const PROJECTS = {
       tech: ['Next.js 14', 'FullCalendar', 'CMI', 'WhatsApp API', 'Vercel'],
       waMsg: 'Bonjour%2C%20je%20veux%20un%20site%20de%20r%C3%A9servation%20comme%20Jet%20Set%20Loisirs',
     },
+    {
+      slug: 'demo-fitness',
+      icon: '💪',
+      title: 'Millenium Fitness',
+      category: 'Salle de sport',
+      summary: "Site vitrine premium pour une salle de fitness : cours, coachs et abonnements.",
+      challenge: "Prospects perdus sur Instagram, aucun planning clair ni inscription en ligne.",
+      solution: "Site rapide avec planning des cours, présentation des coachs et CTA WhatsApp direct.",
+      metrics: [
+        { value: '+150%', label: 'Nouveaux inscrits' },
+        { value: '4.9/5', label: 'Satisfaction membres' },
+        { value: '24/7',  label: 'Inscription en ligne' },
+      ],
+      tech: ['Next.js 14', 'TailwindCSS', 'WhatsApp API', 'Vercel'],
+      waMsg: 'Bonjour%2C%20je%20veux%20un%20site%20comme%20Millenium%20Fitness',
+    },
   ],
   en: [
     {
@@ -223,6 +239,22 @@ export const PROJECTS = {
       tech: ['Next.js 14', 'FullCalendar', 'CMI', 'WhatsApp API', 'Vercel'],
       waMsg: 'Hello%2C%20I%20want%20a%20booking%20site%20like%20Jet%20Set%20Loisirs',
     },
+    {
+      slug: 'demo-fitness',
+      icon: '💪',
+      title: 'Millenium Fitness',
+      category: 'Gym & Fitness',
+      summary: "Premium showcase site for a fitness club: classes, coaches and memberships.",
+      challenge: "Leads lost on Instagram, no clear class schedule or online sign-up.",
+      solution: "Fast site with class schedule, coach profiles and direct WhatsApp CTA.",
+      metrics: [
+        { value: '+150%', label: 'New sign-ups' },
+        { value: '4.9/5', label: 'Member satisfaction' },
+        { value: '24/7',  label: 'Online sign-up' },
+      ],
+      tech: ['Next.js 14', 'TailwindCSS', 'WhatsApp API', 'Vercel'],
+      waMsg: 'Hello%2C%20I%20want%20a%20site%20like%20Millenium%20Fitness',
+    },
   ],
   ar: [
     {
@@ -272,6 +304,22 @@ export const PROJECTS = {
       ],
       tech: ['Next.js 14', 'FullCalendar', 'CMI', 'WhatsApp API', 'Vercel'],
       waMsg: 'Bonjour%2C%20je%20veux%20un%20site%20de%20r%C3%A9servation%20comme%20Jet%20Set%20Loisirs',
+    },
+    {
+      slug: 'demo-fitness',
+      icon: '💪',
+      title: 'Millenium Fitness',
+      category: 'قاعة رياضية',
+      summary: "موقع فاخر لقاعة رياضية: الحصص، المدربين والاشتراكات.",
+      challenge: "ضياع الزبناء على إنستغرام، بدون برنامج واضح ولا تسجيل أونلاين.",
+      solution: "موقع سريع ببرنامج الحصص، تعريف بالمدربين، وزر واتساب مباشر.",
+      metrics: [
+        { value: '+150%', label: 'مشتركون جدد' },
+        { value: '4.9/5', label: 'رضا الأعضاء' },
+        { value: '24/7',  label: 'تسجيل أونلاين' },
+      ],
+      tech: ['Next.js 14', 'TailwindCSS', 'WhatsApp API', 'Vercel'],
+      waMsg: 'Bonjour%2C%20je%20veux%20un%20site%20comme%20Millenium%20Fitness',
     },
   ],
 };
