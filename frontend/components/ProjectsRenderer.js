@@ -77,37 +77,14 @@ export default function ProjectsRenderer({ imagesBySlug }) {
                   </a>
                 </Reveal>
 
-                <Reveal variant={isEven ? 'left' : 'right'} as="div" className="project-gallery">
-                  {images.length === 0 ? (
-                    <div className="gal-item">
-                      <div className="gal-empty">
-                        <div>{p.icon}</div>
-                        <span>{t('projects.noImages')} <code>public/projects/{p.slug}/</code></span>
-                      </div>
-                    </div>
-                  ) : (
-                    images.map((src, i) => (
-                      <button
-                        type="button"
-                        className="gal-item clickable"
-                        key={src}
-                        onClick={() => openLb(images, i)}
-                        aria-label={`Open image ${i + 1}`}
-                      >
-                        <Image
-                          src={src}
-                          alt={`${p.title} — image ${i + 1}`}
-                          width={i === 0 ? 800 : 400}
-                          height={i === 0 ? 450 : 300}
-                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 540px"
-                          quality={72}
-                          loading={i === 0 && blockIdx === 0 ? 'eager' : 'lazy'}
-                          style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-                        />
-                      </button>
-                    ))
-                  )}
-                </Reveal>
+                <ProjectGallery
+                  project={p}
+                  images={images}
+                  isEven={isEven}
+                  blockIdx={blockIdx}
+                  openLb={openLb}
+                  t={t}
+                />
               </div>
             </div>
           </article>

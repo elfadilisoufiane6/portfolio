@@ -15,7 +15,8 @@ portfolio/
         └── projects/   # Project demo images — drop images in each subfolder
             ├── Azure Palace Hotel/
             ├── Rebelle.ma/
-            └── jet-loisir/
+            ├── Granola Ya Salam/
+            └── demo-fitness/
 ```
 
 ## Features

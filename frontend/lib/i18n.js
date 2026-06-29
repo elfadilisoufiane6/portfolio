@@ -36,6 +36,8 @@ export const STRINGS = {
     'projects.stack': 'Stack technique',
     'projects.discuss': "Discuter d'un projet similaire",
     'projects.noImages': 'Déposez les images dans',
+    'projects.showMore': 'Voir plus de photos',
+    'projects.showLess': 'Voir moins',
 
     'pricing.tag': 'Investissement',
     'pricing.title1': 'Choisissez votre ',
@@ -139,6 +141,8 @@ export const STRINGS = {
     'projects.stack': 'Tech stack',
     'projects.discuss': 'Discuss a similar project',
     'projects.noImages': 'Drop images in',
+    'projects.showMore': 'See more photos',
+    'projects.showLess': 'See less',
 
     'pricing.tag': 'Pricing',
     'pricing.title1': 'Choose your ',
@@ -242,6 +246,8 @@ export const STRINGS = {
     'projects.stack': 'التقنيات',
     'projects.discuss': 'ناقش مشروعاً مماثلاً',
     'projects.noImages': 'ضع الصور في',
+    'projects.showMore': 'شاهد المزيد من الصور',
+    'projects.showLess': 'عرض أقل',
 
     'pricing.tag': 'الاستثمار',
     'pricing.title1': 'اختر ',
