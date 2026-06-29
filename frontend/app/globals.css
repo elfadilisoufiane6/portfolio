@@ -626,6 +626,14 @@ input, textarea, select { font-family: inherit; }
   font-size: 2.4rem;
 }
 .gal-empty span { font-size: .75rem; color: var(--text-s); font-weight: 600; }
+.gal-toggle {
+  grid-column: 1 / -1; justify-self: center;
+  margin-top: 4px; padding: 10px 22px; border-radius: 100px;
+  background: rgba(125, 255, 129, 0.08); border: 1px solid var(--border);
+  color: var(--primary); font: inherit; font-size: .82rem; font-weight: 700;
+  letter-spacing: .02em; cursor: pointer; transition: var(--t);
+}
+.gal-toggle:hover { border-color: var(--border-h); background: rgba(125, 255, 129, 0.14); box-shadow: var(--glow); }
 
 /* ============================================================
    TARIFS PAGE
