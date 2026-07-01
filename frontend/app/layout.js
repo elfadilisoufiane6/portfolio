@@ -9,36 +9,27 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://soufweb.site';
 export const metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: 'Souf Web | Agence Web Premium Maroc',
-    template: '%s | Souf Web',
+    default: 'Vertex | Agence Web Premium Maroc',
+    template: '%s | Vertex',
   },
   description:
     "Nous ne créons pas que des sites — nous créons des clients pour votre business. Sites web haute conversion, e-commerce, design premium au Maroc.",
-  keywords: ['web design Maroc', 'agence web', 'e-commerce', 'landing page', 'SEO', 'Souf Web'],
-  authors: [{ name: 'Souf Web' }],
-  creator: 'Souf Web',
+  keywords: ['web design Maroc', 'agence web', 'e-commerce', 'landing page', 'SEO', 'Vertex'],
+  authors: [{ name: 'Vertex' }],
+  creator: 'Vertex',
   openGraph: {
     type: 'website',
     locale: 'fr_MA',
-    title: 'Souf Web — Sites web haute conversion au Maroc',
+    title: 'Vertex — Sites web haute conversion au Maroc',
     description:
       "Sites web premium qui transforment vos visiteurs en clients. Hôtellerie, e-commerce, tourisme — design moderne, livraison rapide.",
-    siteName: 'Souf Web',
-    images: [
-      {
-        url: '/logo.png',
-        width: 1254,
-        height: 1254,
-        alt: 'Souf Web',
-      },
-    ],
+    siteName: 'Vertex',
   },
   twitter: {
-    card: 'summary',
-    title: 'Souf Web — Sites web haute conversion au Maroc',
+    card: 'summary_large_image',
+    title: 'Vertex — Sites web haute conversion au Maroc',
     description:
       "Sites web premium qui transforment vos visiteurs en clients.",
-    images: ['/logo.png'],
   },
   robots: { index: true, follow: true },
 };

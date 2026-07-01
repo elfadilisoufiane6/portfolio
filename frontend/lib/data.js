@@ -1,5 +1,5 @@
 export const SITE = {
-  name: 'Souf Web',
+  name: 'Vertex',
   url:       process.env.NEXT_PUBLIC_SITE_URL  || 'https://soufweb.site',
   phone:     process.env.NEXT_PUBLIC_PHONE     || '212724016604',
   email:     process.env.NEXT_PUBLIC_EMAIL     || 'contact@soufweb.site',
@@ -95,25 +95,25 @@ export const PRICING = {
 export const REVIEWS = {
   fr: [
     { avatar:'👩‍💼', name:'Sara M.',  role:'Fondatrice, Rebelle.ma',         stars:5,
-      quote:"Souf Web nous a livré un e-shop premium pour notre marque de sacs à main féminins, et il vend tout seul. Le système COD fonctionne parfaitement, les commandes arrivent de partout au Maroc. Le retour sur investissement a été immédiat — en moins de 2 mois." },
+      quote:"Vertex nous a livré un e-shop premium pour notre marque de sacs à main féminins, et il vend tout seul. Le système COD fonctionne parfaitement, les commandes arrivent de partout au Maroc. Le retour sur investissement a été immédiat — en moins de 2 mois." },
     { avatar:'👨‍💼', name:'Hamza R.', role:'Directeur, Azure Palace Hotel',  stars:5,
-      quote:"Cherche un développeur li yfhem business, machi ghir code. Souf Web fahmou le besoin men l'awal, livraison f 3 semaines, w l9itu vraiment professionnels. Les réservations directes monta3aw +220%." },
+      quote:"Cherche un développeur li yfhem business, machi ghir code. Vertex fahmou le besoin men l'awal, livraison f 3 semaines, w l9itu vraiment professionnels. Les réservations directes monta3aw +220%." },
     { avatar:'🥣',   name:'Khadija B.', role:'Fondatrice, Granola Ya Salam',   stars:5,
       quote:"Bdina ghir b DM Instagram, daba 3andna e-shop li kaybi3 wahdou. Système COD kaysift les commandes l Sendit otomatik, w lcommandes kayjiw men kola blasa f lMaghreb. F mois lewl rfa3na les ventes b +320%." },
   ],
   en: [
     { avatar:'👩‍💼', name:'Sara M.',  role:'Founder, Rebelle.ma',            stars:5,
-      quote:"Souf Web delivered a premium e-shop for our women's handbags brand, and it sells on its own. The COD system works flawlessly, orders arrive from all across Morocco. The return on investment was immediate — in less than 2 months." },
+      quote:"Vertex delivered a premium e-shop for our women's handbags brand, and it sells on its own. The COD system works flawlessly, orders arrive from all across Morocco. The return on investment was immediate — in less than 2 months." },
     { avatar:'👨‍💼', name:'Hamza R.', role:'GM, Azure Palace Hotel',         stars:5,
-      quote:"Looking for a dev li yfhem business, not just code. Souf Web fahmou the need from day 1, shipped in 3 weeks, w l9itou really professional. Direct bookings +220%." },
+      quote:"Looking for a dev li yfhem business, not just code. Vertex fahmou the need from day 1, shipped in 3 weeks, w l9itou really professional. Direct bookings +220%." },
     { avatar:'🥣',   name:'Khadija B.', role:'Founder, Granola Ya Salam',      stars:5,
       quote:"We started with just Instagram DMs, now we have an e-shop that sells on its own. The COD system pushes orders to Sendit automatically, and orders come from all over Morocco. First month online sales jumped +320%." },
   ],
   ar: [
     { avatar:'👩‍💼', name:'سارة م.',  role:'مؤسسة، Rebelle.ma',                stars:5,
-      quote:'سلّمت لنا Souf Web متجراً إلكترونياً فاخراً لعلامتنا للحقائب النسائية، وهو يبيع بمفرده. نظام الدفع عند الاستلام يعمل بشكل ممتاز، والطلبات تأتينا من كل أنحاء المغرب. عائد الاستثمار كان فورياً — في أقل من شهرين.' },
+      quote:'سلّمت لنا Vertex متجراً إلكترونياً فاخراً لعلامتنا للحقائب النسائية، وهو يبيع بمفرده. نظام الدفع عند الاستلام يعمل بشكل ممتاز، والطلبات تأتينا من كل أنحاء المغرب. عائد الاستثمار كان فورياً — في أقل من شهرين.' },
     { avatar:'👨‍💼', name:'حمزة ر.',  role:'المدير العام، Azure Palace Hotel', stars:5,
-      quote:'كنت كنقلب على مطور كيفهم business، ماشي غير كود. Souf Web فهمو الحاجة من أول يوم، سلمو فـ 3 أسابيع، ولقيتهم محترفين بصح. الحجوزات المباشرة طلعت +220%.' },
+      quote:'كنت كنقلب على مطور كيفهم business، ماشي غير كود. Vertex فهمو الحاجة من أول يوم، سلمو فـ 3 أسابيع، ولقيتهم محترفين بصح. الحجوزات المباشرة طلعت +220%.' },
     { avatar:'🥣',   name:'خديجة ب.',  role:'مؤسسة، Granola Ya Salam',          stars:5,
       quote:'بدينا غير بـ DM إنستغرام، دابا عندنا متجر كيبيع بوحدو. نظام COD كيصيفط الطلبات لـ Sendit أوتوماتيك، والطلبات كيجيو من كل بلاصة فالمغرب. فالشهر اللول طلعو المبيعات بـ +320%.' },
   ],

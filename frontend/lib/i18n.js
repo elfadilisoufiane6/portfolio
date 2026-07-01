@@ -78,7 +78,7 @@ export const STRINGS = {
     'footer.nav': 'Navigation',
     'footer.contact': 'Contact',
     'footer.tagline': 'Construire des empires digitaux, un site à la fois.',
-    'footer.copy': '© 2026 Souf Web. Tous droits réservés.',
+    'footer.copy': '© 2026 Vertex. Tous droits réservés.',
     'footer.made': 'Fait avec ❤️ pour les entreprises qui veulent grandir',
 
     'compare.pages': 'Pages incluses',
@@ -183,7 +183,7 @@ export const STRINGS = {
     'footer.nav': 'Navigation',
     'footer.contact': 'Contact',
     'footer.tagline': 'Building digital empires, one website at a time.',
-    'footer.copy': '© 2026 Souf Web. All rights reserved.',
+    'footer.copy': '© 2026 Vertex. All rights reserved.',
     'footer.made': 'Made with ❤️ for businesses that want to grow',
 
     'compare.pages': 'Pages included',
@@ -288,7 +288,7 @@ export const STRINGS = {
     'footer.nav': 'التنقل',
     'footer.contact': 'التواصل',
     'footer.tagline': 'نبني إمبراطوريات رقمية، موقعاً تلو الآخر.',
-    'footer.copy': '© 2026 Souf Web. جميع الحقوق محفوظة.',
+    'footer.copy': '© 2026 Vertex. جميع الحقوق محفوظة.',
     'footer.made': 'صُنع بـ ❤️ للأعمال التي تريد النمو',
 
     'compare.pages': 'عدد الصفحات',

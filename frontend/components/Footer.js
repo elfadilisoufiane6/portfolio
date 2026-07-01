@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { SITE, waLink } from '@/lib/data';
 import { useApp } from './Providers';
+import Logo from './Logo';
 
 export default function Footer() {
   const { t } = useApp();
@@ -12,7 +13,7 @@ export default function Footer() {
         <div className="footer-top">
           <div className="footer-brand">
             <div className="footer-logo">
-              <img src="/logo.png" alt="Souf Web" className="footer-logo-img" />
+              <Logo variant="footer" />
             </div>
             <p>{t('footer.tagline')}</p>
             <div className="footer-socials">

@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react';
 import { waLink } from '@/lib/data';
 import { LANGS } from '@/lib/i18n';
 import { useApp } from './Providers';
+import Logo from './Logo';
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -31,8 +32,8 @@ export default function Navbar() {
       style={{ boxShadow: scrolled ? '0 4px 30px rgba(0,0,0,0.3)' : 'none' }}
     >
       <div className="nav-inner">
-        <Link href="/" className="nav-logo" onClick={() => setOpen(false)} aria-label="Souf Web — accueil">
-          <img src="/logo.png" alt="Souf Web" className="nav-logo-img" />
+        <Link href="/" className="nav-logo" onClick={() => setOpen(false)} aria-label="Vertex — accueil">
+          <Logo variant="nav" />
         </Link>
 
         <ul className={`nav-links ${open ? 'open' : ''}`}>

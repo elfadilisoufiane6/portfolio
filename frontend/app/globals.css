@@ -1,5 +1,5 @@
 /* ============================================================
-   THEME — Souf Web  |  Black + #7DFF81 (dark default + light)
+   THEME — Vertex  |  Black + #7DFF81 (dark default + light)
    ============================================================ */
 :root, [data-theme="dark"] {
   --primary:       #7DFF81;
@@ -203,15 +203,28 @@ input, textarea, select { font-family: inherit; }
   flex-shrink: 0; transition: transform .25s var(--ease);
 }
 .nav-logo:hover { transform: translateY(-1px); }
-.nav-logo-img {
-  height: 32px; width: auto; display: block;
-  object-fit: contain;
+/* Brand wordmark — transparent, theme-adaptive (used in nav + footer) */
+.brand {
+  display: inline-flex; align-items: center; gap: 9px;
   transition: filter .3s var(--ease);
 }
-.nav-logo:hover .nav-logo-img {
+.brand-mark {
+  width: auto; display: block; flex-shrink: 0;
+}
+.brand-name {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-weight: 800; letter-spacing: -0.03em;
+  color: var(--text); line-height: 1;
+}
+.brand--nav .brand-mark   { height: 26px; }
+.brand--nav .brand-name   { font-size: 1.32rem; }
+.brand--footer .brand-mark { height: 32px; }
+.brand--footer .brand-name { font-size: 1.62rem; }
+
+.nav-logo:hover .brand {
   filter: drop-shadow(0 4px 14px rgba(125, 255, 129, .45));
 }
-[data-theme="light"] .nav-logo:hover .nav-logo-img {
+[data-theme="light"] .nav-logo:hover .brand {
   filter: drop-shadow(0 4px 14px rgba(22, 163, 74, .45));
 }
 
@@ -722,10 +735,6 @@ input, textarea, select { font-family: inherit; }
 .footer-top { display: flex; gap: 60px; padding-bottom: 48px; border-bottom: 1px solid var(--border); flex-wrap: wrap; }
 .footer-brand { max-width: 320px; }
 .footer-logo { display: block; margin-bottom: 16px; }
-.footer-logo-img {
-  height: 42px; width: auto; display: block;
-  object-fit: contain;
-}
 .footer-brand p { color: var(--text-m); font-size: .88rem; line-height: 1.65; margin-bottom: 20px; }
 .footer-socials { display: flex; gap: 10px; }
 .fs-link {
