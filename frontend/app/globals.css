@@ -216,10 +216,10 @@ input, textarea, select { font-family: inherit; }
   font-weight: 800; letter-spacing: -0.03em;
   color: var(--text); line-height: 1;
 }
-.brand--nav .brand-mark   { height: 26px; }
-.brand--nav .brand-name   { font-size: 1.32rem; }
-.brand--footer .brand-mark { height: 32px; }
-.brand--footer .brand-name { font-size: 1.62rem; }
+.brand--nav .brand-mark   { height: 34px; }
+.brand--nav .brand-name   { font-size: 1.66rem; }
+.brand--footer .brand-mark { height: 40px; }
+.brand--footer .brand-name { font-size: 2rem; }
 
 .nav-logo:hover .brand {
   filter: drop-shadow(0 4px 14px rgba(125, 255, 129, .45));
