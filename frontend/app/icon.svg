@@ -1,0 +1,16 @@
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="vx-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0f1f11" />
+      <stop offset="1" stop-color="#060a07" />
+    </linearGradient>
+    <linearGradient id="vx-mark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#aaffad" />
+      <stop offset="1" stop-color="#52e057" />
+    </linearGradient>
+  </defs>
+  <rect width="100" height="100" rx="24" fill="url(#vx-bg)" />
+  <!-- Vertex "Ascension" — two ascending chevrons (growth) -->
+  <path d="M30 66 L50 50 L70 66 L63 72 L50 61 L37 72 Z" fill="url(#vx-mark)" opacity="0.45" />
+  <path d="M30 48 L50 30 L70 48 L62 55 L50 44 L38 55 Z" fill="url(#vx-mark)" />
+</svg>
