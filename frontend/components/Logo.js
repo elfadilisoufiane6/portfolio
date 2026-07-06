@@ -8,14 +8,19 @@ export default function Logo({ variant = 'nav' }) {
     <span className={`brand brand--${variant}`}>
       <svg
         className="brand-mark"
-        viewBox="0 0 32 32"
+        viewBox="0 0 100 100"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         aria-hidden="true"
       >
-        {/* apex / vertex peak */}
+        {/* Ascension — two ascending chevrons (growth) */}
         <path
-          d="M16 3.5 L28.5 26 L21.5 26 L16 15.2 L10.5 26 L3.5 26 Z"
+          d="M30 66 L50 50 L70 66 L63 72 L50 61 L37 72 Z"
+          fill="var(--primary)"
+          opacity="0.45"
+        />
+        <path
+          d="M30 48 L50 30 L70 48 L62 55 L50 44 L38 55 Z"
           fill="var(--primary)"
         />
       </svg>

@@ -20,11 +20,9 @@ export default function OpengraphImage() {
         }}
       >
         <div style={{ display: 'flex', alignItems: 'center', gap: 28 }}>
-          <svg width="120" height="120" viewBox="0 0 32 32" fill="none">
-            <path
-              d="M16 3.5 L28.5 26 L21.5 26 L16 15.2 L10.5 26 L3.5 26 Z"
-              fill="#7DFF81"
-            />
+          <svg width="120" height="120" viewBox="0 0 100 100" fill="none">
+            <path d="M30 66 L50 50 L70 66 L63 72 L50 61 L37 72 Z" fill="#7DFF81" fillOpacity="0.45" />
+            <path d="M30 48 L50 30 L70 48 L62 55 L50 44 L38 55 Z" fill="#7DFF81" />
           </svg>
           <span
             style={{
