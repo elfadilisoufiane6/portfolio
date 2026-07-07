@@ -7,9 +7,20 @@ import { useApp } from './Providers';
 import Lightbox from './Lightbox';
 import Reveal from './Reveal';
 
+const PROJECT_ORDER = [
+  'Granola Ya Salam',
+  'Rebelle.ma',
+  'Dar Naji',
+  'Azure Palace Hotel',
+  'demo-fitness',
+];
+
 export default function ProjectsRenderer({ imagesBySlug }) {
   const { lang, t } = useApp();
-  const list = PROJECTS[lang] || PROJECTS.fr;
+  const source = PROJECTS[lang] || PROJECTS.fr;
+  const list = [...source].sort(
+    (a, b) => PROJECT_ORDER.indexOf(a.slug) - PROJECT_ORDER.indexOf(b.slug)
+  );
 
   const [lb, setLb] = useState({ images: [], idx: null });
   const openLb = (images, idx) => setLb({ images, idx });
