@@ -112,7 +112,7 @@ export default function ProjectsRenderer({ imagesBySlug }) {
   );
 }
 
-const PREVIEW_COUNT = 6;
+const PREVIEW_COUNT = 7;
 
 function ProjectGallery({ project: p, images, isEven, blockIdx, openLb, t }) {
   const [expanded, setExpanded] = useState(false);
