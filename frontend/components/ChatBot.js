@@ -91,11 +91,13 @@ export default function ChatBot() {
             <path d="M6 6l12 12M18 6L6 18" />
           </svg>
         ) : (
-          <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 2C6.48 2 2 6.03 2 11c0 2.5 1.13 4.75 2.95 6.36-.13 1.2-.62 2.5-1.4 3.4-.2.24-.05.6.26.63 1.9.18 3.7-.4 5.02-1.36.99.3 2.05.47 3.17.47 5.52 0 10-4.03 10-9S17.52 2 12 2z" />
-            <circle cx="8" cy="11" r="1.3" fill="#0a0a0a" />
-            <circle cx="12" cy="11" r="1.3" fill="#0a0a0a" />
-            <circle cx="16" cy="11" r="1.3" fill="#0a0a0a" />
+          <svg width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">
+            <rect x="4.5" y="8" width="15" height="10.5" rx="3" />
+            <path d="M12 4.5V8" />
+            <circle cx="12" cy="3.4" r="1.2" fill="currentColor" stroke="none" />
+            <path d="M2.6 12.5v2.5M21.4 12.5v2.5" />
+            <circle cx="9.4" cy="13.2" r="1.35" fill="currentColor" stroke="none" />
+            <circle cx="14.6" cy="13.2" r="1.35" fill="currentColor" stroke="none" />
           </svg>
         )}
         {!open && <span className="chat-fab-dot" aria-hidden="true" />}
@@ -107,9 +109,13 @@ export default function ChatBot() {
           <header className="chat-head">
             <div className="chat-head-id">
               <span className="chat-avatar" aria-hidden="true">
-                <svg width="22" height="22" viewBox="0 0 100 100" fill="none">
-                  <path d="M28 70 L50 51 L72 70 L64 77 L50 63 L36 77 Z" fill="#0a0a0a" opacity="0.55" />
-                  <path d="M28 49 L50 27 L72 49 L63 57 L50 45 L37 57 Z" fill="#0a0a0a" />
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0a0a0a" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">
+                  <rect x="4.5" y="8" width="15" height="10.5" rx="3" />
+                  <path d="M12 4.5V8" />
+                  <circle cx="12" cy="3.4" r="1.2" fill="#0a0a0a" stroke="none" />
+                  <path d="M2.6 12.5v2.5M21.4 12.5v2.5" />
+                  <circle cx="9.4" cy="13.2" r="1.35" fill="#0a0a0a" stroke="none" />
+                  <circle cx="14.6" cy="13.2" r="1.35" fill="#0a0a0a" stroke="none" />
                 </svg>
               </span>
               <div>

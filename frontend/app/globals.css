@@ -834,7 +834,7 @@ button.gal-item {
    CHATBOT — Vertex assistant
    ============================================================ */
 .chat-fab {
-  position: fixed; bottom: 100px; right: 28px; z-index: 901;
+  position: fixed; bottom: 28px; left: 28px; z-index: 901;
   width: 58px; height: 58px; border-radius: 50%;
   background: var(--grad); color: #05130a;
   display: flex; align-items: center; justify-content: center;
@@ -844,13 +844,13 @@ button.gal-item {
 .chat-fab:hover { transform: scale(1.08); box-shadow: 0 10px 28px rgba(125, 255, 129, .5); }
 .chat-fab.is-open { background: var(--bg3); color: var(--text); box-shadow: 0 6px 22px rgba(0,0,0,.35); }
 .chat-fab-dot {
-  position: absolute; top: 2px; right: 2px;
+  position: absolute; top: 2px; left: 2px;
   width: 13px; height: 13px; border-radius: 50%;
   background: #ff4d4d; border: 2px solid var(--bg);
 }
 
 .chat-panel {
-  position: fixed; bottom: 100px; right: 28px; z-index: 902;
+  position: fixed; bottom: 100px; left: 28px; z-index: 902;
   width: 370px; max-width: calc(100vw - 32px);
   height: 560px; max-height: calc(100vh - 140px);
   display: flex; flex-direction: column;
@@ -858,7 +858,7 @@ button.gal-item {
   border: 1px solid var(--border); border-radius: 20px;
   box-shadow: 0 24px 60px rgba(0,0,0,.45);
   overflow: hidden;
-  transform-origin: bottom right;
+  transform-origin: bottom left;
   animation: chatIn .22s var(--ease);
 }
 @keyframes chatIn { from { opacity: 0; transform: translateY(12px) scale(.96); } to { opacity: 1; transform: none; } }
@@ -948,20 +948,21 @@ button.gal-item {
 .chat-input button:hover:not(:disabled) { transform: scale(1.08); }
 .chat-input button:disabled { opacity: .45; cursor: default; }
 
-/* RTL: mirror to the left, flip the send arrow */
+/* RTL: WhatsApp float moves to the left, so the assistant mirrors to the
+   right; also flip the send arrow. */
 [dir="rtl"] .chat-fab,
-[dir="rtl"] .chat-panel { right: auto; left: 28px; }
-[dir="rtl"] .chat-fab-dot { right: auto; left: 2px; }
-[dir="rtl"] .chat-panel { transform-origin: bottom left; }
+[dir="rtl"] .chat-panel { left: auto; right: 28px; }
+[dir="rtl"] .chat-fab-dot { left: auto; right: 2px; }
+[dir="rtl"] .chat-panel { transform-origin: bottom right; }
 [dir="rtl"] .chat-msg--bot { align-self: flex-end; align-items: flex-end; }
 [dir="rtl"] .chat-msg--user { align-self: flex-start; align-items: flex-start; }
 [dir="rtl"] .chat-input button svg { transform: scaleX(-1); }
 
 @media (max-width: 560px) {
-  .chat-fab { bottom: 88px; right: 20px; }
-  .chat-panel { bottom: 88px; right: 16px; left: 16px; width: auto; height: 70vh; }
-  [dir="rtl"] .chat-fab { right: auto; left: 20px; }
-  [dir="rtl"] .chat-panel { right: 16px; left: 16px; }
+  .chat-fab { bottom: 20px; left: 20px; }
+  .chat-panel { bottom: 84px; left: 16px; right: 16px; width: auto; height: 70vh; }
+  [dir="rtl"] .chat-fab { left: auto; right: 20px; }
+  [dir="rtl"] .chat-panel { left: 16px; right: 16px; }
 }
 
 /* ============================================================
