@@ -3,6 +3,7 @@ import { Providers } from '@/components/Providers';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import WhatsAppFloat from '@/components/WhatsAppFloat';
+import ChatBot from '@/components/ChatBot';
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://soufweb.site';
 
@@ -69,6 +70,7 @@ export default function RootLayout({ children }) {
           <main>{children}</main>
           <Footer />
           <WhatsAppFloat />
+          <ChatBot />
         </Providers>
       </body>
     </html>
